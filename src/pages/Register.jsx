@@ -63,6 +63,7 @@ const Register = () => {
 
        
         <div style={{ backgroundImage: "url('https://bywjfszqwytcvsftccvd.supabase.co/storage/v1/object/public/Marathon/marathon-6660178_1280.jpg?t=2024-07-29T09%3A09%3A01.933Z')", filter: 'brightness(100%)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}} className=' h-full bg-no-repeat bg-cover'>
+              <img src="https://bywjfszqwytcvsftccvd.supabase.co/storage/v1/object/public/Marathon/download__1_-removebg-preview.png?t=2024-07-29T20%3A41%3A58.096Z" alt="Logo" className="w-30 h-10" />
              <form onSubmit={handleSubmit} className=''>
             <div className='flex items-center flex-row pt-10 justify-center'>
                 <h1 className='text-white text-3xl lg:text-4xl bold pd-10'>Celebration</h1>
