@@ -7,7 +7,7 @@ import Button from '../Components/Button';
 import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
-const supabase = createClient('https://nhgwlsmmqjlszkjncurg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5oZ3dsc21tcWpsc3pram5jdXJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDk2NzAyNzcsImV4cCI6MjAyNTI0NjI3N30.d_XWelkD4W4eo4R5eJybKzXfuG02WIemtAQwSU-oW1g');
+const supabase = createClient('https://bywjfszqwytcvsftccvd.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5d2pmc3pxd3l0Y3ZzZnRjY3ZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyNDI5NTksImV4cCI6MjAzNzgxODk1OX0.DTRQvPueJoTGcvfaa6_5BfQPq9yD13Si6OI2y3rqy5k');
 
 
 
@@ -17,10 +17,7 @@ const Register = () => {
   const [Surname, setSurname] = useState('');
   const [Email, setEmail] = useState('');
   const [Mobile, setMobile] = useState('');
-  const [MaritalStatus, setMaritalStatus] = useState('');
-  const [Church, setChurch] = useState('');
   const [Age, setAge] = useState('');
-  const [Address, setAddress] = useState('');
   const [Gender, setGender] = useState('');
   const [Racetype, setRacetype] = useState('');
   const [NextOfKin, setNextOfKin] = useState('');
@@ -31,7 +28,7 @@ const Register = () => {
 
 
     try {
-      const { data, error } = await supabase.from('Realman').insert([{ Name, Surname, Email, Mobile, MaritalStatus, Church, Age, Address}]);
+      const { data, error } = await supabase.from('Marathon').insert([{ Name, Surname, Email, Mobile,Age,NextOfKin,Racetype,Gender}]);
       if (error) {
           throw error;
       }
@@ -42,10 +39,11 @@ const Register = () => {
     setSurname('');
     setEmail('');
     setMobile('');
-    setMaritalStatus('');
-    setChurch('');
     setAge('');
-    setAddress('');
+    setGender('');
+    setRacetype('');
+    setNextOfKin('');
+    navigate('/Welcome'); // Redirect to the home page after successful registration
 
   } catch (error) {
       console.error('Error inserting data:', error);
@@ -135,11 +133,11 @@ const Register = () => {
     
 <div className='flex justify-center items-center flex-col lg:flex-row mt-3 '>
 <div className='mx-32 mt-3'>
-<select value={Gender} onChange={(e) => setGender(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
-                        <option value="">Select RaceType</option>
-                        <option value="Male">5km</option>
-                        <option value="Female">10km</option>
-                        <option value="Female">21km</option>
+<select value={Racetype} onChange={(e) => setRacetype(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
+<option value="">Select RaceType</option>
+                        <option value="5km">5km</option>
+                        <option value="10km">10km</option>
+                        <option value="21km">21km</option>
                         <option value="Other">Other</option>
                     </select>
 </div>
@@ -156,7 +154,7 @@ const Register = () => {
             required
         />
         <label htmlFor="consent" className="lg:text-blue-600 ">
-            I consent to the terms and conditions
+          l accept the <a href="/terms" className="text-blue-600">Terms and Conditions</a>
         </label>
     </div>
     <div className='lg:mx-44'>
