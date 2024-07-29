@@ -16,11 +16,11 @@ const Welcome = () => {
           }}
         />
       </div>
-      <div className='text-center flex justify-center items-center opacity-800 text-white text-4xl font-extrabold opacity-800 '>Celebration Norton Metro</div>
-      <div className='text-center flex justify-center items-center opacity-800 text-white text-4xl font-extrabold opacity-800 '>2024 Fun Run Registration Platform</div>
+      <div className='text-center flex justify-center items-center opacity-800 text-white lg:text-4xl text:2xl  font-extrabold opacity-800 '>Celebration Norton Metro</div>
+      <div className='text-center flex justify-center items-center opacity-800 text-white lg:text-4xl text:2xl font-extrabold opacity-800 '>2024 Fun Run Registration Platform</div>
     
       <div className='text-center flex justify-center items-center opacity-800 text-gray-600 text-sm font-extrabold opacity-800 mt-20 '> 
-        <a href="/Register" className='text-white text-center text-xl font-semibold  flex justify-center items-center  w-45 bg-blue-700 px-4 py-4 rounded-xl mr-20'>Register As Runner</a>
+        <a href="/Register" className='text-white text-center text-xl font-semibold  flex justify-center items-center  w-45 bg-blue-700 px-4 py-4 rounded-xl lg:mr-20'>Register As Runner</a>
 
         <div  className='text-white text-center  text-xl font-semibold  justify-center items-center   w-45 bg-blue-700 px-4 py-4 hidden rounded-xl ml-20'>Register As Sponsor</div>
 
