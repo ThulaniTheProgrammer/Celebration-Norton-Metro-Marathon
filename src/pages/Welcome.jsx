@@ -22,7 +22,7 @@ const Welcome = () => {
       <div className='text-center flex justify-center items-center opacity-800 text-gray-600 text-sm font-extrabold opacity-800 mt-20 '> 
         <a href="/Register" className='text-white text-center text-xl font-semibold  flex justify-center items-center  w-45 bg-blue-700 px-4 py-4 rounded-xl mr-20'>Register As Runner</a>
 
-        <div  className='text-white text-center  text-xl font-semibold flex justify-center items-center   w-45 bg-blue-700 px-4 py-4 rounded-xl ml-20'>Register As Sponsor</div>
+        <div  className='text-white text-center  text-xl font-semibold  justify-center items-center   w-45 bg-blue-700 px-4 py-4 hidden rounded-xl ml-20'>Register As Sponsor</div>
 
       </div>
 
