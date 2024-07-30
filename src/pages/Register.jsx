@@ -43,7 +43,7 @@ const Register = () => {
     setGender('');
     setRacetype('');
     setNextOfKin('');
-    navigate('/Welcome'); // Redirect to the home page after successful registration
+    navigate('/Thankyou'); // Redirect to the home page after successful registration
 
   } catch (error) {
       console.error('Error inserting data:', error);
@@ -155,7 +155,7 @@ const Register = () => {
             required
         />
         <label htmlFor="consent" className="lg:text-blue-600 ">
-          l accept the <a href="/terms" className="text-blue-600">Terms and Conditions</a>
+          l accept the <a href="/Terms" className="text-blue-600">Terms and Conditions</a>
         </label>
     </div>
     <div className='lg:mx-44'>

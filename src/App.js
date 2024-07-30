@@ -15,6 +15,10 @@ import RegisterFacilitator from './pages/RegisterFacilitator';
 import Managean from './pages/Table/ManageMan';
 import RegisteredMan from './pages/Table/RegisteredMan';
 import Mobile from './pages/Mobile';
+import Thankyou from './pages/Thankyou';
+import Terms from './pages/Terms';
+import Search from  './pages/Search';
+
 
 function App() {
   return (
@@ -37,6 +41,11 @@ function App() {
       <Route path="Managean" element={<Managean/>}></Route>
       <Route path="RegisteredMan" element={<RegisteredMan/>}></Route>
       <Route path="Mobile" element={<Mobile/>}></Route>
+      <Route path="Thankyou" element={<Thankyou/>}></Route>
+      <Route path="Terms" element={<Terms/>}></Route>
+      <Route path="Search" element={<Search/>}></Route>
+     
+
 
       
 
