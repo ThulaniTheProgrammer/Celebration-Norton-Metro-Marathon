@@ -16,7 +16,7 @@ const Welcome = () => {
           }}
         />
       </div>
-      <div className='text-center flex justify-center items-center opacity-800 text-white lg:text-4xl text:2xl  font-extrabold opacity-800 '>Celebration Church Norton Metro</div>
+      <div className='text-center flex justify-center items-center opacity-800 text-white lg:text-4xl text:2xl  font-extrabold opacity-800 '>Celebration Fun Run</div>
       <div className='text-center flex justify-center items-center opacity-800 text-white text-4xl text:2xl font-extrabold opacity-800 '>2024 Fun Run Registration Platform</div>
     
       <div className='text-center flex justify-center items-center opacity-800 text-gray-600 text-sm font-extrabold opacity-800 mt-20 '> 
@@ -30,7 +30,7 @@ const Welcome = () => {
     
    
     </div>
-  );
+  ); 
 };
 
 export default Welcome;

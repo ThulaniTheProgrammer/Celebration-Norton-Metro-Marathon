@@ -69,7 +69,7 @@ const Register = () => {
              <form onSubmit={handleSubmit} className=''>
             <div className='flex items-center flex-row pt-10 justify-center'>
                 <h1 className='text-white text-3xl lg:text-4xl bold pd-10'>Celebration</h1>
-                <h1 className='text-blue-600 text-3xl lg:text-4xl bold px-2'>Norton Metro</h1>
+              
             </div>
             <div className='flex items-center flex-row justify-center'>
                 <h1 className='text-blue-600   text-3xl bold lg:text-4xl pd-10'>Fun Run</h1>
