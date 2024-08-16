@@ -21,6 +21,7 @@ const Register = () => {
   const [Gender, setGender] = useState('');
   const [Racetype, setRacetype] = useState('');
   const [NextOfKin, setNextOfKin] = useState('');
+  const [Tshirt, setTshirt] = useState('');
   
 
   const handleSubmit = async (e) => {
@@ -43,6 +44,7 @@ const Register = () => {
     setGender('');
     setRacetype('');
     setNextOfKin('');
+    setTshirt('');
     navigate('/Thankyou'); // Redirect to the home page after successful registration
 
   } catch (error) {
@@ -142,11 +144,24 @@ const Register = () => {
                         <option value="Other">Other</option>
                     </select>
 </div>
-        <div className='mx-32 mt-3'>
+        <div className='mx-32 mt-3 '>
             <input type="text" value={NextOfKin} onChange={(e) => setNextOfKin(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter next of kin mobile number" /> 
             </div>
 
     </div>
+
+
+    <div className='lg:mx-48 mt-3 flex justify-center items-center lg:justify-start items-start flex-col lg:flex-row '>
+<select value={Tshirt} onChange={(e) => setTshirt(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
+<option className='' value="">Select T-Shirt Size</option>
+                        <option value="5km">Small</option>
+                        <option value="10km">Medium</option>
+                        <option value="21km">Large</option>
+                        <option value="Other">X-large</option>
+                    </select>
+</div>
+
+
     <div className="flex  lg:mx-48 items-center ">
         <input
             type="checkbox"
