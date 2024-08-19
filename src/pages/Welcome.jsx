@@ -36,14 +36,14 @@ const Welcome = () => {
         
                 
                 <div>
-                <h1 className="text-3xl font-bold ">Banking Details!</h1>
-                <p className="">1. Account Name: Celebration Church Norton</p>
-                <p className="text-lg">Account Number: 66961190610042 - USD</p>
+                <h1 className="text-3xl font-bold pb-2 lg:mb-0">Banking Details!</h1>
+                <p className="font-semibold">1. Account Name: Celebration Church Norton</p>
+                <p className="text-lg">USD Account Number: 66961190610042</p>
                 <p className="">BRANCH: Norton</p>
                 </div>
                <div>
-               <p className="text-lg">2. Ecocash: *151*2*1*37296*AMT*66961190610042# - USD </p>
-               <p className="text-lg pt-3">3.For cash payments  0774521028</p>
+               <p className="text-lg font-semibold pt-2 lg:mt-2">2. Ecocash USD: *151*2*1*37296*AMT*66961190610042#  </p>
+               <p className="text-lg pt-2 font-semibold">3. For cash payments contact 0774521028</p>
                </div>
             </div>
    
