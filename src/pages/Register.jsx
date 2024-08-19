@@ -9,8 +9,6 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient('https://bywjfszqwytcvsftccvd.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5d2pmc3pxd3l0Y3ZzZnRjY3ZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyNDI5NTksImV4cCI6MjAzNzgxODk1OX0.DTRQvPueJoTGcvfaa6_5BfQPq9yD13Si6OI2y3rqy5k');
 
-
-
 const Register = () => {
     const navigate = useNavigate();
   const [Name, setName] = useState('');
@@ -51,16 +49,9 @@ const Register = () => {
       console.error('Error inserting data:', error);
   }
 
-
-   
-
-
   };
 
   
-   
-
-    
     return (
 
        
@@ -154,7 +145,7 @@ const Register = () => {
     </div>
 
 
-    <div className='lg:mx-48 mt-3 flex justify-center items-center lg:justify-start items-start flex-col lg:flex-row '>
+    <div className='lg:mx-48 mt-3 flex justify-center  lg:justify-start items-start flex-col lg:flex-row '>
 <select value={Tshirt} onChange={(e) => setTshirt(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
 <option className='' value="">Select T-Shirt Size</option>
                         <option value="5km">Small</option>
@@ -172,6 +163,10 @@ const Register = () => {
             className="mr-2"
             required
         />
+
+
+
+        
         <label htmlFor="consent" className="lg:text-blue-600 ">
           l accept the <a href="/Terms" className="text-blue-600">Terms and Conditions</a>
         </label>
