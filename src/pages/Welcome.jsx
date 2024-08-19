@@ -20,14 +20,32 @@ const Welcome = () => {
       <div className='text-center flex justify-center items-center opacity-800 text-white text-4xl text:2xl font-extrabold opacity-800 '>2024 Fun Run Registration Platform</div>
     
       <div className='text-center flex justify-center items-center opacity-800 text-gray-600 text-sm font-extrabold opacity-800 mt-20 '> 
-        <a href="/Register" className='text-white text-center text-xl font-semibold  flex justify-center items-center  w-45 bg-blue-700 px-4 py-4 rounded-xl lg:mr-20'>Register As Runner</a>
+        <a href="/Register" className='text-white text-center text-xl font-semibold  flex justify-center items-center  w-45 bg-blue-800 px-4 py-4 rounded-xl lg:mr-20'>Register As Runner</a>
 
-        <div  className='text-white text-center  text-xl font-semibold  justify-center items-center   w-45 bg-blue-700 px-4 py-4 hidden rounded-xl ml-20'>Register As Sponsor</div>
+
+
+        <div  className='text-white text-center  text-xl font-semibold  justify-center items-center   w-45 bg-slate-700 px-4 py-4 hidden rounded-xl ml-20'>Register As Sponsor</div>
+
+
 
       </div>
 
       
     
+      <div className=" text-white mb-0 h-full mt-10 flex flex-col lg:flex-row justify-between bg-blue-800 p-8 rounded shadow">
+        
+                
+                <div>
+                <h1 className="text-3xl font-bold ">Banking Details!</h1>
+                <p className="">Account Name: Celebration Church Norton</p>
+                <p className="">Account Number: 66961190610042 - USD</p>
+                <p className="">BRANCH: Norton</p>
+                </div>
+               <div>
+               <p className=""><b>Ecocash: *151*2*1*37296*AMT*66961190610042# - USD </b></p>
+               <p className="">For cash payments  <b>0774521028</b></p>
+               </div>
+            </div>
    
     </div>
   ); 

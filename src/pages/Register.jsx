@@ -75,6 +75,9 @@ const Register = () => {
                 <h1 className='text-blue-600   text-3xl bold lg:text-4xl pd-10'>Fun Run</h1>
                 <h1 className='text-white text-3xl bold lg:text-4xl px-2'>Registration</h1>
             </div>
+
+          
+
             <div className='items-center hidden lg:flex flex-row justify-center'>
                 <h1 className='text-blue-600   text-xl bold lg:text-2xl pd-10'>Please fill the form below</h1>
                 <h1 className='text-white text-xl bold lg:text-2xl px-2'>with your details</h1>

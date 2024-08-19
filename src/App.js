@@ -18,6 +18,7 @@ import Mobile from './pages/Mobile';
 import Thankyou from './pages/Thankyou';
 import Terms from './pages/Terms';
 import Search from  './pages/Search';
+import Banking from './pages/Banking';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <Route path="Thankyou" element={<Thankyou/>}></Route>
       <Route path="Terms" element={<Terms/>}></Route>
       <Route path="Search" element={<Search/>}></Route>
+      <Route path="Banking" element={<Banking/>}></Route>
      
 
 
