@@ -9,6 +9,8 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient('https://bywjfszqwytcvsftccvd.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5d2pmc3pxd3l0Y3ZzZnRjY3ZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyNDI5NTksImV4cCI6MjAzNzgxODk1OX0.DTRQvPueJoTGcvfaa6_5BfQPq9yD13Si6OI2y3rqy5k');
 
+
+
 const Register = () => {
     const navigate = useNavigate();
   const [Name, setName] = useState('');
@@ -49,9 +51,16 @@ const Register = () => {
       console.error('Error inserting data:', error);
   }
 
+
+   
+
+
   };
 
   
+   
+
+    
     return (
 
        
@@ -66,9 +75,6 @@ const Register = () => {
                 <h1 className='text-blue-600   text-3xl bold lg:text-4xl pd-10'>Fun Run</h1>
                 <h1 className='text-white text-3xl bold lg:text-4xl px-2'>Registration</h1>
             </div>
-
-
-
             <div className='items-center hidden lg:flex flex-row justify-center'>
                 <h1 className='text-blue-600   text-xl bold lg:text-2xl pd-10'>Please fill the form below</h1>
                 <h1 className='text-white text-xl bold lg:text-2xl px-2'>with your details</h1>
@@ -85,7 +91,7 @@ const Register = () => {
           
 
 <div  className='mx-32 mt-3'>
-<input type="text" value={Name} onChange={(e) => setName(e.target.value)} className="bg-blue-600 placeholder:text-white h-16 w-80 text-white rounded-2xl border border-blue-500 px-4 py-2" placeholder="Enter your name" /> 
+<input type="text" value={Name} onChange={(e) => setName(e.target.value)} className="bg-blue-600 h-16 w-80 text-white rounded-2xl border border-blue-500 px-4 py-2" placeholder="Enter your name" /> 
 
 </div>
 
@@ -96,27 +102,27 @@ const Register = () => {
         type="text"
         value={Surname}
         onChange={(e) => setSurname(e.target.value)}
-        className="bg-blue-600 placeholder:text-white  h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2"
+        className="bg-blue-600  h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2"
         placeholder="Enter your Surname" />
 </div>
 </div>
 <div className='flex justify-center items-center flex-col lg:flex-row  '>
   
 <div  className='mx-32 mt-3'>
-<input type="text" value={Email} onChange={(e) => setEmail(e.target.value)} className="bg-blue-600 placeholder:text-white h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your email" /> 
+<input type="text" value={Email} onChange={(e) => setEmail(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your email" /> 
 
 </div>
 
 
 <div className='mx-32 mt-3'>
-<input type="numeric" value={Mobile} onChange={(e) => setMobile(e.target.value)} className="bg-blue-600 placeholder:text-white  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your mobile" />  
+<input type="numeric" value={Mobile} onChange={(e) => setMobile(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your mobile" />  
 </div>
 </div>
 
 
 <div className='flex justify-center items-center flex-col lg:flex-row '>
     <div className='mx-32 mt-3'>
-<input type="text" value={Age} onChange={(e) => setAge(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border placeholder:text-white rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your Age" /> 
+<input type="text" value={Age} onChange={(e) => setAge(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your Age" /> 
 </div>
 <div className='mx-32 mt-3'>
 <select value={Gender} onChange={(e) => setGender(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
@@ -139,14 +145,13 @@ const Register = () => {
                     </select>
 </div>
         <div className='mx-32 mt-3 '>
-            <input type="text" value={NextOfKin} onChange={(e) => setNextOfKin(e.target.value)} className="bg-blue-600 placeholder:text-white h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter next of kin mobile number" /> 
+            <input type="text" value={NextOfKin} onChange={(e) => setNextOfKin(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter next of kin mobile number" /> 
             </div>
 
     </div>
 
 
-    <div className='flex  items-center  justify-center lg:items-start  lg:justify-start flex-col lg:flex-row mt-3  '>
-    <div className='lg:mx-48 mt-3'>
+    <div className='lg:mx-48 mt-3 flex justify-center items-center lg:justify-start items-start flex-col lg:flex-row '>
 <select value={Tshirt} onChange={(e) => setTshirt(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
 <option className='' value="">Select T-Shirt Size</option>
                         <option value="5km">Small</option>
@@ -154,7 +159,6 @@ const Register = () => {
                         <option value="21km">Large</option>
                         <option value="Other">X-large</option>
                     </select>
-</div>
 </div>
 
 
@@ -165,10 +169,6 @@ const Register = () => {
             className="mr-2"
             required
         />
-
-
-
-        
         <label htmlFor="consent" className="lg:text-blue-600 ">
           l accept the <a href="/Terms" className="text-blue-600">Terms and Conditions</a>
         </label>
