@@ -145,7 +145,8 @@ const Register = () => {
     </div>
 
 
-    <div className='lg:mx-48 mt-3 flex justify-center  lg:justify-start items-start flex-col lg:flex-row '>
+    <div className='flex  items-center  justify-center lg:items-start  lg:justify-start flex-col lg:flex-row mt-3  '>
+    <div className='lg:mx-48 mt-3'>
 <select value={Tshirt} onChange={(e) => setTshirt(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
 <option className='' value="">Select T-Shirt Size</option>
                         <option value="5km">Small</option>
@@ -153,6 +154,7 @@ const Register = () => {
                         <option value="21km">Large</option>
                         <option value="Other">X-large</option>
                     </select>
+</div>
 </div>
 
 
