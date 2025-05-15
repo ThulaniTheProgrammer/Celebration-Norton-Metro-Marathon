@@ -19,6 +19,7 @@ import Thankyou from './pages/Thankyou';
 import Terms from './pages/Terms';
 import Search from  './pages/Search';
 import Banking from './pages/Banking';
+import Participants from './pages/Participant';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <Route path="Terms" element={<Terms/>}></Route>
       <Route path="Search" element={<Search/>}></Route>
       <Route path="Banking" element={<Banking/>}></Route>
+      <Route path="Participants" element={<Participants/>}></Route>
      
 
 
