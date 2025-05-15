@@ -4,8 +4,17 @@ import Typewriter from 'typewriter-effect';
 const Welcome = () => {
   return (
     
-    <div className='h-screen w-screen flex flex-col bg-no-repeat bg-cover h-full' style={{ backgroundImage: "url('https://aqlztcsukugmsztrrkau.supabase.co/storage/v1/object/sign/buck/DSC05443.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M3NGYxODUyLTExNWMtNGFhYy04MmEzLWNkZDc0ZDg0YzY1NiJ9.eyJ1cmwiOiJidWNrL0RTQzA1NDQzLmpwZyIsImlhdCI6MTc0NzMxMTk5NSwiZXhwIjoxNzc4ODQ3OTk1fQ.9jwRJ6o_59cmr_SYzTucDj0LzNy3SQ-yH7B3GsZVp_M')", filter: 'brightness(100%)' }}>
-      <img src="https://celebrate.org/wp-content/uploads/2023/12/Celebration-Ministires-Horizontal-Black.png" alt="Logo" className="w-40 h-20" />
+   <div
+  className="w-screen min-h-screen flex flex-col bg-no-repeat bg-cover bg-center"
+  style={{
+    backgroundImage: `url('https://aqlztcsukugmsztrrkau.supabase.co/storage/v1/object/sign/buck/DSC05443.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M3NGYxODUyLTExNWMtNGFhYy04MmEzLWNkZDc0ZDg0YzY1NiJ9.eyJ1cmwiOiJidWNrL0RTQzA1NDQzLmpwZyIsImlhdCI6MTc0NzMxMTk5NSwiZXhwIjoxNzc4ODQ3OTk1fQ.9jwRJ6o_59cmr_SYzTucDj0LzNy3SQ-yH7B3GsZVp_M')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    filter: 'brightness(100%)',
+  }}
+>
+      <img src="https://celebrate.org/wp-content/uploads/2023/12/Celebration-Ministires-Horizontal-Black.png" alt="Logo" className="w-40 h-10" />
       <div className='text-center flex justify-center items-center opacity-800 text-white text-4xl font-extrabold opacity-800 mt-40'>
       <Typewriter
           options={{
