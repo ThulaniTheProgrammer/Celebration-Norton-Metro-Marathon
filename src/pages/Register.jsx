@@ -62,134 +62,96 @@ const Register = () => {
 
     
     return (
+  <div className="w-full min-h-screen bg-cover bg-center flex flex-col items-center px-4 py-10"
+    style={{
+      backgroundImage: `url('https://aqlztcsukugmsztrrkau.supabase.co/storage/v1/object/sign/buck/DSC05638.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M3NGYxODUyLTExNWMtNGFhYy04MmEzLWNkZDc0ZDg0YzY1NiJ9.eyJ1cmwiOiJidWNrL0RTQzA1NjM4LmpwZyIsImlhdCI6MTc0NzMxNTM4OSwiZXhwIjoxNzc4ODUxMzg5fQ.sexSCYNMFjVdrrCSgCbypSnQ26CRSwgOlJ1syV0DLNk')`
+    }}
+  >
+    <img
+      src="https://celebrate.org/wp-content/uploads/2023/12/Celebration-Ministires-Horizontal-Black.png"
+      alt="Logo"
+      className="w-48 flex items-left justify-left h-auto mb-6"
+    />
 
-       
-        <div style={{ backgroundImage: "url('https://bywjfszqwytcvsftccvd.supabase.co/storage/v1/object/public/Marathon/marathon-6660178_1280.jpg?t=2024-07-29T09%3A09%3A01.933Z')", filter: 'brightness(100%)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}} className=' h-full bg-no-repeat bg-cover'>
-              <img src="https://bywjfszqwytcvsftccvd.supabase.co/storage/v1/object/public/Marathon/download__1_-removebg-preview.png?t=2024-07-29T20%3A41%3A58.096Z" alt="Logo" className="w-30 h-10" />
-             <form onSubmit={handleSubmit} className=''>
-            <div className='flex items-center flex-row pt-10 justify-center'>
-                <h1 className='text-white text-3xl lg:text-4xl bold pd-10'>Celebration</h1>
-              
-            </div>
-            <div className='flex items-center flex-row justify-center'>
-                <h1 className='text-blue-600   text-3xl bold lg:text-4xl pd-10'>Fun Run</h1>
-                <h1 className='text-white text-3xl bold lg:text-4xl px-2'>Registration</h1>
-            </div>
-            <div className='items-center hidden lg:flex flex-row justify-center'>
-                <h1 className='text-blue-600   text-xl bold lg:text-2xl pd-10'>Please fill the form below</h1>
-                <h1 className='text-white text-xl bold lg:text-2xl px-2'>with your details</h1>
-            </div>
-          
-         
+    <div className="bg-white/90 backdrop-blur-lg shadow-xl rounded-2xl w-full max-w-4xl p-8">
+      <h2 className="text-center text-4xl font-bold text-blue-700 mb-2">Celebration Fun Run</h2>
+      <p className="text-center text-gray-600 mb-6">Please fill out the registration form below</p>
 
-<div className='lg:bg-white mx-10  mt:5 lg:mt-10 py-10 px-10 rounded-xl mb-10 '>
-
-
-    
-            <div className='flex justify-center items-center flex-col lg:flex-row mt-3'>
-
-          
-
-<div  className='mx-32 mt-3'>
-<input type="text" value={Name} onChange={(e) => setName(e.target.value)} className="bg-blue-600 h-16 w-80 text-white rounded-2xl border border-blue-500 px-4 py-2" placeholder="Enter your name" /> 
-
-</div>
-
-            
-
-<div className='mx-32 mt-3 '>
-    <input
-        type="text"
-        value={Surname}
-        onChange={(e) => setSurname(e.target.value)}
-        className="bg-blue-600  h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2"
-        placeholder="Enter your Surname" />
-</div>
-</div>
-<div className='flex justify-center items-center flex-col lg:flex-row  '>
-  
-<div  className='mx-32 mt-3'>
-<input type="text" value={Email} onChange={(e) => setEmail(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your email" /> 
-
-</div>
-
-
-<div className='mx-32 mt-3'>
-<input type="numeric" value={Mobile} onChange={(e) => setMobile(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your mobile" />  
-</div>
-</div>
-
-
-<div className='flex justify-center items-center flex-col lg:flex-row '>
-    <div className='mx-32 mt-3'>
-<input type="text" value={Age} onChange={(e) => setAge(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter your Age" /> 
-</div>
-<div className='mx-32 mt-3'>
-<select value={Gender} onChange={(e) => setGender(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
-                        <option value="">Select Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                    </select>
-</div>
-</div>
-    
-<div className='flex justify-center items-center flex-col lg:flex-row mt-3 '>
-<div className='mx-32 mt-3'>
-<select value={Racetype} onChange={(e) => setRacetype(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
-<option value="">Select RaceType</option>
-                        <option value="5km">5km</option>
-                        <option value="10km">10km</option>
-                        <option value="21km">21km</option>
-                        <option value="Other">Other</option>
-                    </select>
-</div>
-        <div className='mx-32 mt-3 '>
-            <input type="text" value={NextOfKin} onChange={(e) => setNextOfKin(e.target.value)} className="bg-blue-600  h-16 w-80 text-white border  rounded-2xl border-blue-500 px-4 py-2" placeholder="Enter next of kin mobile number" /> 
-            </div>
-
-    </div>
-
-
-    <div className='lg:mx-48 mt-3 flex justify-center items-center lg:justify-start items-start flex-col lg:flex-row '>
-<select value={Tshirt} onChange={(e) => setTshirt(e.target.value)} className="bg-blue-600 h-16 w-80 text-white border rounded-2xl border-blue-500 px-4 py-2">
-<option className='' value="">Select T-Shirt Size</option>
-                        <option value="5km">Small</option>
-                        <option value="10km">Medium</option>
-                        <option value="21km">Large</option>
-                        <option value="Other">X-large</option>
-                    </select>
-</div>
-
-
-    <div className="flex  lg:mx-48 items-center ">
-        <input
-            type="checkbox"
-            id="consent"
-            className="mr-2"
-            required
-        />
-        <label htmlFor="consent" className="lg:text-blue-600 ">
-          l accept the <a href="/Terms" className="text-blue-600">Terms and Conditions</a>
-        </label>
-    </div>
-    <div className='lg:mx-44'>
-    <button className='text-xl w-full  text-center mx-0 lg:w-100 mt-20 mb-10 py-6 text-white font-bold  bg-blue-900 rounded-xl  px-2'   type="submit">Register</button>
-    </div>
-
-    </div>
-
-   
- 
-    
- 
-          
-      </form>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Name & Surname */}
+        <div className="flex flex-col md:flex-row gap-6">
+          <input type="text" value={Name} onChange={(e) => setName(e.target.value)} placeholder="First Name"
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="text" value={Surname} onChange={(e) => setSurname(e.target.value)} placeholder="Last Name"
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
-       
 
-        
-    )
-}
+        {/* Email & Mobile */}
+        <div className="flex flex-col md:flex-row gap-6">
+          <input type="email" value={Email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="tel" value={Mobile} onChange={(e) => setMobile(e.target.value)} placeholder="Mobile Number"
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        {/* Age & Gender */}
+        <div className="flex flex-col md:flex-row gap-6">
+          <input type="number" value={Age} onChange={(e) => setAge(e.target.value)} placeholder="Age"
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <select value={Gender} onChange={(e) => setGender(e.target.value)}
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        {/* Race Type & Next of Kin */}
+        <div className="flex flex-col md:flex-row gap-6">
+          <select value={Racetype} onChange={(e) => setRacetype(e.target.value)}
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Select Race Type</option>
+            <option value="5km">5km</option>
+            <option value="10km">10km</option>
+            <option value="21km">21km</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <input type="text" value={NextOfKin} onChange={(e) => setNextOfKin(e.target.value)} placeholder="Next of Kin Mobile Number"
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        {/* T-Shirt Size */}
+        <div>
+          <select value={Tshirt} onChange={(e) => setTshirt(e.target.value)}
+            className="w-full px-4 py-3 border border-blue-300 rounded-xl bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Select T-Shirt Size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="X-Large">X-Large</option>
+          </select>
+        </div>
+
+        {/* Terms */}
+        <div className="flex items-center">
+          <input type="checkbox" id="consent" className="mr-2" required />
+          <label htmlFor="consent" className="text-sm text-gray-700">
+            I accept the <a href="/Terms" className="text-blue-600 underline">Terms and Conditions</a>
+          </label>
+        </div>
+
+        {/* Submit Button */}
+        <div>
+          <button type="submit"
+            className="w-full py-4 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-lg rounded-xl transition duration-300">
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+);}
 
 export default Register;
