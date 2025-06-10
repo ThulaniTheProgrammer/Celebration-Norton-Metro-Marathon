@@ -20,6 +20,7 @@ import Terms from './pages/Terms';
 import Search from  './pages/Search';
 import Banking from './pages/Banking';
 import Participants from './pages/Participant';
+import RegisterCyclist from './pages/RegisterCyclist';
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
       <Route path="Search" element={<Search/>}></Route>
       <Route path="Banking" element={<Banking/>}></Route>
       <Route path="Participants" element={<Participants/>}></Route>
-     
+      <Route path="RegisterCyclist" element={<RegisterCyclist/>}></Route>
 
 
       
