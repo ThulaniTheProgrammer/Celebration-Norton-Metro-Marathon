@@ -98,10 +98,9 @@ const RegisterCyclist = () => {
             <select value={Racetype} onChange={(e) => setRacetype(e.target.value)}
               className="w-full px-4 py-3 border border-blue-300 rounded-xl bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option value="">Select Race Type</option>
-              <option value="5km">5km</option>
-              <option value="10km">10km</option>
-              <option value="21km">21km</option>
-              <option value="Other">Other</option>
+              <option value="5km">15km</option>
+              <option value="10km">30km</option>
+              
             </select>
 
             <input type="text" value={NextOfKin} onChange={(e) => setNextOfKin(e.target.value)} placeholder="Next of Kin Mobile Number"
