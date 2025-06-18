@@ -44,11 +44,23 @@ const Welcome = () => {
                 
                 <div>
                 <h1 className="text-3xl font-bold pb-2 lg:mb-0">Payment Methods!</h1>
-                <p className="">1. BRANCH: CBZ Samora Branch</p>
+                <p className="">1. BRANCH: Stanbic Bank Borrowdal Branch</p>
                 <p className="font-semibold">Account Name: Celebration Church Norton</p>
-                <p className="text-lg">USD Account Number: 66961190610042</p>
+                <p className="text-lg">USD Account Number: 9140009229867</p>
                 
                 </div>
+                <div>
+                <h1 className="text-3xl font-bold pb-2 lg:mb-0">Payment Methods!</h1>
+                <p className="">1. BRANCH: Stanbic Bank Borrowdale Branch</p>
+                <p className="font-semibold">Account Name: Celebration Church Norton</p>
+                <p className="text-lg"> ZWG   Account Number: 9140009229859</p>
+                <p className="font-semibold">Sort Code: 03104
+                </p>
+                <p className="text-lg">Swift Code: SBICZWHX</p>
+                
+                
+                </div>
+
                <div>
                <p className="text-lg font-semibold pt-2 lg:mt-2">2. Ecocash USD: *151*2*1*37296*AMT*66961190610042#  </p>
                <p className="text-lg pt-2 font-semibold">3. For cash payments contact 0774521028</p>
