@@ -7,7 +7,7 @@ const Welcome = () => {
    <div
   className="w-screen min-h-screen flex flex-col bg-no-repeat bg-cover bg-center"
   style={{
-    backgroundImage: `url('https://doxyxvdantoibzijpfra.supabase.co/storage/v1/object/sign/hub/marathon1.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMzAwZTdmMS1jNWNiLTRkODUtODYwNi03MzNjYmIxMWJjN2IiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodWIvbWFyYXRob24xLmpwZyIsImlhdCI6MTc1MDI1MzQyMSwiZXhwIjoxNzgxNzg5NDIxfQ.mmp0huBvOsaNzjmuszfe_coTyGpt5Z_UFsD9GFLkjdc')`,
+    backgroundImage: `url('https://doxyxvdantoibzijpfra.supabase.co/storage/v1/object/sign/hub/DSC05531.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMzAwZTdmMS1jNWNiLTRkODUtODYwNi03MzNjYmIxMWJjN2IiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodWIvRFNDMDU1MzEuanBnIiwiaWF0IjoxNzUwMjU2MTUyLCJleHAiOjE3ODE3OTIxNTJ9.UfgMuquWQ4VfcKoktGJoSH8wNud8kXWvnGb-kJPParw')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
