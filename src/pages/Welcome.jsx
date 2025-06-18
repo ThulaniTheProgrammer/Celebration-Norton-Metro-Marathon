@@ -44,7 +44,7 @@ const Welcome = () => {
                 
                 <div>
                 <h1 className="text-3xl font-bold pb-2 lg:mb-0">Payment Methods!</h1>
-                <p className="">1. BRANCH: Stanbic Bank Borrowdal Branch</p>
+                <p className="">1. BRANCH: Stanbic Bank Borrowdale Branch</p>
                 <p className="font-semibold">Account Name: Celebration Church Norton</p>
                 <p className="text-lg">USD Account Number: 9140009229867</p>
                 
