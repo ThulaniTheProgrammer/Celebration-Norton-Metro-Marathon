@@ -64,7 +64,7 @@ const Register = () => {
     return (
   <div className="w-full min-h-screen bg-cover bg-center flex flex-col items-center px-4 py-10"
     style={{
-      backgroundImage: `url('https://aqlztcsukugmsztrrkau.supabase.co/storage/v1/object/sign/buck/DSC05638.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M3NGYxODUyLTExNWMtNGFhYy04MmEzLWNkZDc0ZDg0YzY1NiJ9.eyJ1cmwiOiJidWNrL0RTQzA1NjM4LmpwZyIsImlhdCI6MTc0NzMxNTM4OSwiZXhwIjoxNzc4ODUxMzg5fQ.sexSCYNMFjVdrrCSgCbypSnQ26CRSwgOlJ1syV0DLNk')`
+      backgroundImage: `url('https://doxyxvdantoibzijpfra.supabase.co/storage/v1/object/sign/hub/marathon2.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMzAwZTdmMS1jNWNiLTRkODUtODYwNi03MzNjYmIxMWJjN2IiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodWIvbWFyYXRob24yLmpwZyIsImlhdCI6MTc1MDI1MzE0MSwiZXhwIjoxNzgxNzg5MTQxfQ.11R3gpkDNyNrj8tEA-5N6KZT4oBZ575pJFNqxKDKR2o')`
     }}
   >
     <img

@@ -14,7 +14,7 @@ const Welcome = () => {
     filter: 'brightness(100%)',
   }}
 >
-      <img src="https://celebrate.org/wp-content/uploads/2023/12/Celebration-Ministires-Horizontal-Black.png" alt="Logo" className="w-40 h-10" />
+      <img src="https://doxyxvdantoibzijpfra.supabase.co/storage/v1/object/sign/hub/marathon1.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9lMzAwZTdmMS1jNWNiLTRkODUtODYwNi03MzNjYmIxMWJjN2IiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodWIvbWFyYXRob24xLmpwZyIsImlhdCI6MTc1MDI1MzEwNSwiZXhwIjoxNzgxNzg5MTA1fQ.vuyqqDiJeW5waAExAgzNv8uy1ZQXxby_12ow0AS-z5g" alt="Logo" className="w-40 h-10" />
       <div className='text-center flex justify-center items-center opacity-800 text-white text-4xl font-extrabold opacity-800 mt-40'>
       <Typewriter
           options={{
