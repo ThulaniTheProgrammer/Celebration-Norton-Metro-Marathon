@@ -76,7 +76,7 @@ const Welcome = () => {
             <h2 className="text-lg sm:text-xl font-bold mb-2">📱 Other Payments</h2>
             <p className="text-sm sm:text-base font-medium">
               Ecocash USD: <br />
-              *151*2*1*37296*AMT*66961190610022#
+             
             </p>
             <p className="text-sm sm:text-base font-medium mt-4">
               💬 Cash: Call <a href="tel:0774521028" className="underline">0774521028</a>
