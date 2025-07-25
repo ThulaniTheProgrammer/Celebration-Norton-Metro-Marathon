@@ -60,22 +60,26 @@ const Welcome = () => {
         <div className="bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 text-white p-6 sm:p-10 rounded-2xl shadow-xl max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
             <h2 className="text-lg sm:text-xl font-bold mb-2">💳 USD Bank Transfer</h2>
-            <p className="text-sm sm:text-base">🏦 Stanbic Bank - Borrowdale Branch</p>
+         <p className="text-sm sm:text-base">🏦 CBZ | Samora Machel Branch</p>
             <p className="text-sm sm:text-base font-medium">Account Name: Celebration Church Norton</p>
-            <p className="text-sm sm:text-base">USD Account #: 9140009229867</p>
+
+            <p className="text-sm sm:text-base">USD Account No 66961190610042</p>
           </div>
           <div>
             <h2 className="text-lg sm:text-xl font-bold mb-2">💵 ZWL Bank Transfer</h2>
-            <p className="text-sm sm:text-base">🏦 Stanbic Bank - Borrowdale Branch</p>
+            <p className="text-sm sm:text-base">🏦 CBZ | Samora Machel Branch</p>
             <p className="text-sm sm:text-base font-medium">Account Name: Celebration Church Norton</p>
-            <p className="text-sm sm:text-base">ZWL Account #: 9140009229859</p>
-            <p className="text-sm sm:text-base">Sort Code: 03104</p>
-            <p className="text-sm sm:text-base">Swift Code: SBICZWHX</p>
+            <p className="text-sm sm:text-base">ZWG Account No 66961190610022</p>
+        
           </div>
           <div>
             <h2 className="text-lg sm:text-xl font-bold mb-2">📱 Other Payments</h2>
             <p className="text-sm sm:text-base font-medium">
-              Ecocash USD: <br />
+               Short code *151*1*3*1#
+Select Bank CBZ
+Put in account number 66961190610042
+Put in Amount  USD15.50
+Reference :Fullname and FunRun no space I.e AmosDzimunweFunRun <br />
              
             </p>
             <p className="text-sm sm:text-base font-medium mt-4">
