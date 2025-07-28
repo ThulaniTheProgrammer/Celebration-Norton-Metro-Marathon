@@ -73,15 +73,18 @@ const Welcome = () => {
         
           </div>
           <div>
-            <h2 className="text-lg sm:text-xl font-bold mb-2">📱 Other Payments</h2>
-            <p className="text-sm sm:text-base font-medium">
-               Short code *151*1*3*1#
-Select Bank CBZ
-Put in account number 66961190610042
-Put in Amount  USD15.50
-Reference :Fullname and FunRun no space I.e AmosDzimunweFunRun <br />
-             
+            <h2 className="text-lg sm:text-xl font-bold mb-2">📱 Cash Payments</h2>
+
+          <p> Cash Payment Contact Cell Number: +263 774 521 028</p>
+            <p className="text-sm sm:text-base font-medium mt-4">
+              💬 Cash: Call <a href="tel:0774521028" className="underline">0774521028</a>
             </p>
+          </div>
+
+           <div>
+            <h2 className="text-lg sm:text-xl font-bold mb-2">📱 Cash Payments</h2>
+
+          <p> Direct Ecocash Payments: +263 772 252 127 (Ecocash name Amos Dzimunwe)</p>
             <p className="text-sm sm:text-base font-medium mt-4">
               💬 Cash: Call <a href="tel:0774521028" className="underline">0774521028</a>
             </p>
