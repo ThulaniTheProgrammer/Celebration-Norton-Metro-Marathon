@@ -82,7 +82,7 @@ const Welcome = () => {
           </div>
 
            <div>
-            <h2 className="text-lg sm:text-xl font-bold mb-2">📱 Cash Payments</h2>
+            <h2 className="text-lg sm:text-xl font-bold mb-2">📱 EcoCash Payments</h2>
 
           <p> Direct Ecocash Payments: +263 772 252 127 (Ecocash name Amos Dzimunwe)</p>
             <p className="text-sm sm:text-base font-medium mt-4">
