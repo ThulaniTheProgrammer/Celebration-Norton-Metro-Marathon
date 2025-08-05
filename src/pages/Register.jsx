@@ -131,6 +131,9 @@ const Register = () => {
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
             <option value="X-Large">X-Large</option>
+            <option value="XXL">XXL</option>
+            <option value="3XL">3XL</option>
+            <option value="4XL">4XL</option>
           </select>
         </div>
 
